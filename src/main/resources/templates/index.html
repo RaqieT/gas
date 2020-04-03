@@ -25,16 +25,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/" th:text="#{Home}"><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/achievement">Achievement</a>
+                    <a class="nav-link" href="/achievement" th:text="#{Achievement}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/activities">Activities</a>
+                    <a class="nav-link" href="/activities" th:text="#{Activities}"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/topRecords">Top records</a>
+                    <a class="nav-link" href="/topRecords" th:text="#{TopRecords}"></a>
                 </li>
 
             </ul>
@@ -47,13 +47,13 @@
                 <a href="?lang=de">DE</a>
             </form>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" th:text="#{logout}"> </button>
             </form>
         </div>
     </nav>
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <h3 th:text="'Welcome to our application' + ${username}"></h3>
+        <h3 th:text='#{greeting} + ${username}'></h3>
         <p th:text="${#dates.format(datetime, 'dd MMM yyyy HH:mm')}"></p>
 
 
@@ -61,32 +61,32 @@
             <div class="card">
                 <img src="/images/user_icon.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">User info</h5>
-                    <p class="card-text">Points: </p>
-                    <p class="card-text">Rank: </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title" th:text="#{userInfo}"></h5>
+                    <p class="card-text" th:text="#{points}"></p>
+                    <p class="card-text" th:text="#{rank}"></p>
+                    <p class="card-text"><small class="text-muted" th:text='#{lastUpdated}'></small></p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Last achievement</h5>
+                    <h5 class="card-title" th:text="#{lastAchievement}"></h5>
                     <p class="card-text">?????????????????????????????????</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 mins ago</small></p>
                 </div>
             </div>
         </div>
         <br>
         <div class="card mb-3">
             <div class="card-body">
-                <h5 class="card-title">Last activities</h5>
+                <h5 class="card-title" th:text="#{LastActivities}"></h5>
                 <table class="table table-hover">
 
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Activities</th>
-                        <th scope="col">Distance</th>
-                        <th scope="col">Calories</th>
+                        <th scope="col" th:text="#{Activities}"></th>
+                        <th scope="col" th:text="#{Distance}"></th>
+                        <th scope="col" th:text="#{Calories}"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -110,7 +110,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 min ago</small></p>
             </div>
         </div>
 
