@@ -35,4 +35,10 @@ public class WebAppController {
         return "topRecords";
     }
 
+    @RequestMapping("/aboutProgram")
+    public String aboutProgram(Model model){
+
+        return "aboutProgram";
+    }
+
 }
