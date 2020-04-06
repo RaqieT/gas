@@ -47,7 +47,7 @@
                 <a href="?lang=en"> <img src="/images/united-kingdom.png" width="30" height="20" title="EN"> </a>
                 <a href="?lang=en">EN</a>
             </form>
-            <form class="form-inline my-2 my-lg-0" >
+            <form class="form-inline my-2 my-lg-0">
                 <button class="btn btn-outline-success my-2 my-sm-0" style="margin:10px;"  type="submit" th:text="#{logout}"></button>
             </form>
         </div>
@@ -55,69 +55,9 @@
 
     <!--Body-->
     <div class="jumbotron">
-        <h3 th:text='#{greeting} + ${username}'></h3>
-        <p th:text="${#dates.format(datetime, 'dd MMM yyyy HH:mm')}"></p>
-
-
-        <div class="card-deck">
-            <div class="card">
-                <img src="/images/user_icon.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h5 class="card-title" th:text="#{userInfo}"></h5>
-                    <p class="card-text" th:text="#{points}"></p>
-                    <p class="card-text" th:text="#{rank}"></p>
-                    <p class="card-text"><small class="text-muted" th:text='#{lastUpdated}'></small></p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" th:text="#{lastAchievement}"></h5>
-                    <p class="card-text">?????????????????????????????????</p>
-                    <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 mins ago</small></p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title" th:text="#{LastActivities}"></h5>
-                <table class="table table-hover">
-
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col" th:text="#{Activities}"></th>
-                        <th scope="col" th:text="#{Distance}"></th>
-                        <th scope="col" th:text="#{Calories}"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Run</td>
-                        <td>1800m</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Bike</td>
-                        <td>8800m</td>
-                        <td>330</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Walk</td>
-                        <td>600m</td>
-                        <td>40</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 min ago</small></p>
-            </div>
-        </div>
 
     </div>
-</div> <!-- /container -->
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
