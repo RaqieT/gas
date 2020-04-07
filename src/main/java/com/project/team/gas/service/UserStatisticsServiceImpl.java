@@ -4,7 +4,9 @@ import com.project.team.gas.api.service.UserStatisticsService;
 import com.project.team.gas.datastore.UserStatistics;
 import com.project.team.gas.repository.UserStatisticsRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+@Service
 @RequiredArgsConstructor
 public class UserStatisticsServiceImpl implements UserStatisticsService {
     private final UserStatisticsRepository repository;
