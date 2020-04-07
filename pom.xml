@@ -69,7 +69,20 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+			<version>2.2.6.RELEASE</version>
+		</dependency>
 
+
+		<!-- Google Fit Api Requester -->
+		<dependency>
+			<groupId>com.google.apis</groupId>
+			<artifactId>google-api-services-fitness</artifactId>
+			<version>v1-rev20200220-1.30.9</version>
+		</dependency>
 	</dependencies>
 
 	<build>
