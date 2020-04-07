@@ -1,6 +1,5 @@
 package com.project.team.gas.repository;
 
-import com.google.api.services.fitness.Fitness;
 import com.project.team.gas.datastore.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
