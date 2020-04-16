@@ -6,9 +6,12 @@ import com.project.team.gas.integration.google.api.datatype.GoogleOAuth2UserInfo
 import com.project.team.gas.integration.google.api.datatype.GoogleOAuthScopes;
 import com.project.team.gas.repository.AppUserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
 import org.springframework.security.oauth2.core.oidc.OidcScopes;
+import org.springframework.security.oauth2.core.oidc.user.DefaultOidcUser;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.stereotype.Service;
 
@@ -47,4 +50,15 @@ public class AppUserServiceImpl extends OidcUserService implements AppUserServic
     }
 
 
+    @Override
+    public AppUser getMe() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication == null) {
+            return null;
+        }
+
+        DefaultOidcUser defaultOidcUser = (DefaultOidcUser) authentication.getPrincipal();
+        String email = defaultOidcUser.getEmail();
+        return appUserRepository.findByEmail(email);
+    }
 }
