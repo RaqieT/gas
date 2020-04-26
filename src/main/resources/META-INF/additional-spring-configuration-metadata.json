@@ -1,9 +1,0 @@
-{
-  "properties": [
-    {
-      "name": "com.project.team.gas.init.UserStatisticsFetchScheduler.fixedDelay",
-      "type": "java.lang.String",
-      "description": "Delay between next data fetch from Google Fit API for all UserStatistics (in ms)."
-    }
-  ]
-}

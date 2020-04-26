@@ -13,4 +13,7 @@ public class AppUser extends BaseEntity {
     private String name;
     private String email;
     private String imageUrl;
+
+    @OneToOne
+    private UserStatistics userStatistics;
 }

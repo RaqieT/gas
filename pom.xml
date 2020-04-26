@@ -90,7 +90,11 @@
 			<artifactId>google-api-services-fitness</artifactId>
 			<version>v1-rev20200220-1.30.9</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.google.api-client</groupId>
+			<artifactId>google-api-client</artifactId>
+			<version>1.30.8</version>
+		</dependency>
 	</dependencies>
 
 	<build>
