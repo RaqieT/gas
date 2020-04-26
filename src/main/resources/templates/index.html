@@ -67,7 +67,7 @@
                 <div class="card-body">
                     <h5 class="card-title" th:text="#{userInfo}"></h5>
                     <p class="card-text" th:text="${username}"></p>
-                    <p class="card-text" th:text="#{points}"></p>
+                    <p class="card-text" th:text="#{points} + ${': ' + user_points}"></p>
                     <p class="card-text" th:text="#{rank}"></p>
                     <p class="card-text"><small class="text-muted" th:text='#{lastUpdated}'></small></p>
                 </div>

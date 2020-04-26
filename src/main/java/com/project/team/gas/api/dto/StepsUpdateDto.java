@@ -6,6 +6,6 @@ import java.io.Serializable;
 
 @Data
 public class StepsUpdateDto implements Serializable {
-    private String userId;
+    private String googleUserId;
     private int steps;
 }

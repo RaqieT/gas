@@ -55,7 +55,6 @@ public class AppUserServiceImpl extends OidcUserService implements AppUserServic
         appUser.setGoogleUserId(userInfo.getId());
 
         UserStatistics userStatistics = new UserStatistics();
-        userStatistics.setPoints(0L);
         userStatisticsService.save(userStatistics);
 
         appUser.setUserStatistics(userStatistics);

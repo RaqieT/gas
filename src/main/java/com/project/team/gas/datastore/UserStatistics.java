@@ -11,12 +11,11 @@ import javax.persistence.OneToOne;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 public class UserStatistics extends BaseEntity {
-    private long steps;
+    private long steps = 0;
 
     @OneToOne(mappedBy = "userStatistics", optional = false)
     private AppUser user;
 
-    @JsonProperty("points")
     public long getPoints() {
         // TODO: here we can calculate points, for now it is just steps
         return steps;

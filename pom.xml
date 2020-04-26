@@ -90,22 +90,11 @@
 			<artifactId>google-api-services-fitness</artifactId>
 			<version>v1-rev20200220-1.30.9</version>
 		</dependency>
-
-<!--		&lt;!&ndash; https://mvnrepository.com/artifact/com.google.apis/google-api-services-fitness &ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>com.google.apis</groupId>-->
-<!--			<artifactId>google-api-services-fitness</artifactId>-->
-<!--			<version>v1-rev127-1.25.0</version>-->
-<!--		</dependency>-->
-
-
 		<dependency>
 			<groupId>com.google.api-client</groupId>
 			<artifactId>google-api-client</artifactId>
 			<version>1.30.8</version>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>

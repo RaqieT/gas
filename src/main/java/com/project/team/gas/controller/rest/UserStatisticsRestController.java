@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "rest/userstatistics")
+@RequestMapping(value = "rest/open/userstatistics")
 @RequiredArgsConstructor
 public class UserStatisticsRestController {
     private final UserStatisticsService userStatisticsService;
@@ -17,5 +17,9 @@ public class UserStatisticsRestController {
     @RequestMapping(method = RequestMethod.PUT, path = "steps")
     public void updateSteps(@RequestBody StepsUpdateDto stepsUpdateDto) {
         userStatisticsService.updateSteps(stepsUpdateDto);
+    }
+    @RequestMapping(method = RequestMethod.GET, path = "steps")
+    public String test() {
+        return "test";
     }
 }
