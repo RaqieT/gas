@@ -26,9 +26,9 @@
 
         <div class="card-deck">
             <div class="card">
-                <img th:src="${user_img}" class="card-img-top" alt="">
                 <div class="card-body">
                     <h5 class="card-title" th:text="#{userInfo}"></h5>
+                    <img th:src="${user_img}" width="100" height="100" class="figure-img" alt="">
                     <p class="card-text" th:text="${username}"></p>
                     <p class="card-text" th:text="#{points} + ${': ' + user_points}"></p>
                     <p class="card-text" th:text="#{rank}"></p>
