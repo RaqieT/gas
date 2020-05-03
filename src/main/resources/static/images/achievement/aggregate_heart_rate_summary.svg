@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" id="svg3843" sodipodi:docname="heart beat.svg" viewBox="0 0 640 480" version="1.1" inkscape:version="0.48.3.1 r9886">
+  <title id="title3894">heart beat</title>
+  <defs id="defs3845">
+    <linearGradient id="linearGradient3808" y2="103.49" xlink:href="#linearGradient3798" gradientUnits="userSpaceOnUse" x2="220.12" y1="104.89" x1="145.33" inkscape:collect="always"/>
+    <linearGradient id="linearGradient3798" inkscape:collect="always">
+      <stop id="stop3800" style="stop-color:#ffffff" offset="0"/>
+      <stop id="stop3802" style="stop-color:#ffffff;stop-opacity:0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3841" y2="232.17" gradientUnits="userSpaceOnUse" y1="82.44" gradientTransform="translate(29.884 -10.18)" x2="175.55" x1="180.71" inkscape:collect="always">
+      <stop id="stop3780" style="stop-color:#dc0000" offset="0"/>
+      <stop id="stop3782" style="stop-color:#aa0000" offset="1"/>
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview id="base" bordercolor="#666666" inkscape:pageshadow="2" inkscape:window-y="-8" pagecolor="#ffffff" inkscape:window-height="706" inkscape:window-maximized="1" inkscape:zoom="0.77472527" inkscape:window-x="-8" showgrid="false" borderopacity="1.0" inkscape:current-layer="layer1" inkscape:cx="120.57447" inkscape:cy="240" inkscape:window-width="1366" inkscape:pageopacity="0.0" inkscape:document-units="px"/>
+  <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+    <path id="path4336" style="stroke-opacity:.73545;stroke:#9f2727;stroke-width:6;fill:url(#linearGradient3841)" d="m328.91 403.1s-375.65-207.38-199.56-333.9c108.05-77.638 175.68 39.33 199.14 32.28 24.77-7.449 74.68-91.797 167.62-53.595 237.37 97.575-167.2 355.22-167.2 355.22z" inkscape:export-ydpi="52.814671" sodipodi:nodetypes="csssc" inkscape:export-filename="F:\FASTALLOY\TTD\2009 TTD\TTD DEC 2009\today\logo_projects\lubdubb\lubbdub.png" inkscape:connector-curvature="0" inkscape:export-xdpi="52.814671"/>
+    <path id="path5201" style="stroke-width:0;fill:#ffffff" d="m423.71 138.64c27.064 21.659 43.151 49.916 43.151 81.718 0.00002 24.034-9.1967 47.238-25.366 68.026l-31.294-5.4722c15.142-18.293 23.827-38.954 23.827-60.4 0.00001-28.253-15.058-53.172-40.13-71.782l29.812-12.09z" inkscape:export-ydpi="52.814671" inkscape:export-filename="F:\FASTALLOY\TTD\2009 TTD\TTD DEC 2009\today\logo_projects\lubdubb\lubbdub.png" inkscape:connector-curvature="0" inkscape:export-xdpi="52.814671"/>
+    <path id="path5207" style="stroke-width:0;fill:#ffffff" d="m364.32 157.77c24.103 17.054 38.704 40.304 38.704 66.772 0 20.155-8.4774 39.543-23.143 56.575l-36.938-6.4251c13.728-14.008 21.775-30.466 21.775-47.637 0.00002-22.367-13.658-41.721-35.741-54.942l35.342-14.343z" inkscape:export-ydpi="52.814671" inkscape:export-filename="F:\FASTALLOY\TTD\2009 TTD\TTD DEC 2009\today\logo_projects\lubdubb\lubbdub.png" inkscape:connector-curvature="0" inkscape:export-xdpi="52.814671"/>
+    <path id="path4871" sodipodi:rx="10.648936" sodipodi:ry="10.971631" style="stroke-width:0;fill:#ffffff" sodipodi:type="arc" d="m-28.397 134.07a10.649 10.972 0 1 1 -21.298 0 10.649 10.972 0 1 1 21.298 0z" inkscape:export-ydpi="52.814671" inkscape:export-filename="F:\FASTALLOY\TTD\2009 TTD\TTD DEC 2009\today\logo_projects\lubdubb\lubbdub.png" transform="matrix(2.3884 0 0 1.9666 390.64 -37.71)" sodipodi:cy="134.07092" sodipodi:cx="-39.046101" inkscape:export-xdpi="52.814671"/>
+    <path id="path3786" sodipodi:rx="60.666668" sodipodi:ry="35.496452" style="opacity:.13717;stroke-width:0;fill:url(#linearGradient3808)" sodipodi:type="arc" d="m251.7 101.16a60.667 35.496 0 1 1 -121.33 0 60.667 35.496 0 1 1 121.33 0z" transform="matrix(.96746 1.4727 -2.9816 1.5129 320.28 -294.88)" sodipodi:cy="101.15603" sodipodi:cx="191.03546"/>
+    <path id="path3806" sodipodi:rx="60.666668" sodipodi:ry="35.496452" style="opacity:.18142;stroke-width:0;fill:url(#linearGradient3808)" sodipodi:type="arc" d="m251.7 101.16a60.667 35.496 0 1 1 -121.33 0 60.667 35.496 0 1 1 121.33 0z" transform="matrix(-0.402 1.5003 2.6695 .71528 273.46 -227.64)" sodipodi:cy="101.15603" sodipodi:cx="191.03546"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
