@@ -58,28 +58,20 @@
                         <th scope="col">#</th>
                         <th scope="col" th:text="#{Activities}"></th>
                         <th scope="col" th:text="#{Distance}"></th>
-                        <th scope="col" th:text="#{Calories}"></th>
+                        <th scope="col" th:text="#{Time}"></th>
+                        <th scope="col" th:text="#{points}"></th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Run</td>
-                        <td>1800m</td>
-                        <td>80</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Bike</td>
-                        <td>8800m</td>
-                        <td>330</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Walk</td>
-                        <td>600m</td>
-                        <td>40</td>
-                    </tr>
+                    <th:block th:each="activity : ${activities}">
+                        <tr>
+                            <td th:text="${activity.getId()}">...</td>
+                            <td th:text="${activity.getType()}">...</td>
+                            <td th:text="${activity.serializeDistance()}">...</td>
+                            <td th:text="${activity.serializeTime()}">...</td>
+                            <td th:text="${activity.calculatePoints()}">...</td>
+                        </tr>
+                    </th:block>
                     </tbody>
                 </table>
                 <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 min ago</small></p>

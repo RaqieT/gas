@@ -44,28 +44,28 @@ class RankServiceImpl implements RankService {
     }
 
     private void whichRank(Rank rank, UserStatistics userStats) {
-        if (userStats.getSteps() < 10000) {
+        if (userStats.getPoints() < 1000) {
             rank.setName("Beginner");
             rank.setRankURL("Beginner.png");
-        } else if (userStats.getSteps() >= 10000 && userStats.getSteps() < 20000) {
+        } else if (userStats.getPoints() >= 1000 && userStats.getPoints() < 5000) {
             rank.setName("Challenger");
             rank.setRankURL("Challenger.png");
-        } else if (userStats.getSteps() >= 20000 && userStats.getSteps() < 30000) {
+        } else if (userStats.getPoints() >= 5000 && userStats.getPoints() < 10000) {
             rank.setName("Amateur");
             rank.setRankURL("Amateur.png");
-        } else if (userStats.getSteps() >= 30000 && userStats.getSteps() < 40000) {
+        } else if (userStats.getPoints() >= 10000 && userStats.getPoints() < 15000) {
             rank.setName("Skillful");
             rank.setRankURL("Skillful.png");
-        } else if (userStats.getSteps() >= 40000 && userStats.getSteps() < 50000) {
+        } else if (userStats.getPoints() >= 15000 && userStats.getPoints() < 20000) {
             rank.setName("Sportsman");
             rank.setRankURL("Sportsman.png");
-        } else if (userStats.getSteps() >= 50000 && userStats.getSteps() < 60000) {
+        } else if (userStats.getPoints() >= 20000 && userStats.getPoints() < 30000) {
             rank.setName("Athlete");
             rank.setRankURL("Athlete.png");
-        } else if (userStats.getSteps() >= 60000 && userStats.getSteps() < 70000) {
+        } else if (userStats.getPoints() >= 30000 && userStats.getPoints() < 50000) {
             rank.setName("Master");
             rank.setRankURL("Master.png");
-        } else if (userStats.getSteps() >= 70000 && userStats.getSteps() < 100000) {
+        } else if (userStats.getPoints() >= 50000) {
             rank.setName("Champion");
             rank.setRankURL("Champion.png");
         }
