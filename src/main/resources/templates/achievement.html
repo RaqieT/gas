@@ -16,46 +16,101 @@
 </head>
 <body>
 <!--Menu-->
+<div th:insert="fragments/menu"></div>
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/" th:text="#{Home}"><span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/achievement" th:text="#{Achievement}"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/activities" th:text="#{Activities}"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/topRecords" th:text="#{TopRecords}"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/aboutProgram" th:text="#{aboutProgram}"></a>
-                </li>
-            </ul>
-            <form id="langForm" action="" method="get">
-                <a href="?lang=pl"> <img src="/images/poland.png" width="30" height="20" title="PL"> </a>
-                <a href="?lang=pl">PL</a> |
-                <a href="?lang=en"> <img src="/images/united-kingdom.png" width="30" height="20" title="EN"> </a>
-                <a href="?lang=en">EN</a>
-            </form>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" style="margin:10px;"  type="submit" th:text="#{logout}"></button>
-            </form>
-        </div>
-    </nav>
-
-    <!--Body-->
     <div class="jumbotron">
 
+        <div class="card-deck">
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{keepMoving}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_activity_summary.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{swifty}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_speed_summary_type_speed.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{regularity}"/>
+                </h5>
+                <img src="/images/achievement/type_workout_exercise.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card-deck">
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{hydration}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_hydration.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{heartBeat}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_heart_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{longDistance}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_distance_delta.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card-deck">
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{burnFat}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_basal_metabolic_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{countCalories}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_calories_expended.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{overpowered}"/>
+                </h5>
+                <img src="/images/achievement/aggregate_power_summary.svg" width="150" height="150" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -16,4 +16,7 @@ public class AppUser extends BaseEntity {
 
     @OneToOne
     private UserStatistics userStatistics;
+
+    @OneToOne
+    private Rank rank;
 }

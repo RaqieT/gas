@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico"/>
+
+    <title>Gainful Achivement System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+
+</head>
+<body>
+<div th:insert="fragments/menu"></div>
+<div class="container">
+    <div class="jumbotron">
+        <div class="card-deck">
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Beginner}"/>
+                </h5>
+                <img src="/images/ranks/Beginner.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{BeginnerDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Challenger}"/>
+                </h5>
+                <img src="/images/ranks/Challenger.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{ChallengerDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Amateur}"/>
+                </h5>
+                <img src="/images/ranks/Amateur.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AmateurDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Skillful}"/>
+                </h5>
+                <img src="/images/ranks/Skillful.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{SkillfulDescr}"/>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card-deck">
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Sportsman}"/>
+                </h5>
+                <img src="/images/ranks/Sportsman.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{SportsmanDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Athlete}"/>
+                </h5>
+                <img src="/images/ranks/Athlete.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{AthleteDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Master}"/>
+                </h5>
+                <img src="/images/ranks/Master.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{MasterDescr}"/>
+                </p>
+            </div>
+            <div class="card align-items-center" style="width: 10rem;">
+                <h5 class="card-title">
+                    <th:block th:utext="#{Champion}"/>
+                </h5>
+                <img src="/images/ranks/Champion.png" width="100" height="100" class="figure-img" alt="">
+                <p class="card-text">
+                    <th:block th:utext="#{ChampionDescr}"/>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
