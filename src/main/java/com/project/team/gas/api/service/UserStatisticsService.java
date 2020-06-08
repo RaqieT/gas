@@ -8,6 +8,7 @@ import java.util.UUID;
 public interface UserStatisticsService {
     void save(UserStatistics userStatistics);
     List<UserStatistics> getAll();
+    List<UserStatistics> getAllByOrderByPoints();
     UserStatistics getByUserId(UUID id);
 
     UserStatistics getByGoogleUserId(String googleId);

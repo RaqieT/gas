@@ -24,4 +24,29 @@ public class UserStatistics extends BaseEntity {
     @OneToOne(mappedBy = "userStatistics", optional = false, fetch = FetchType.LAZY)
     @JsonIgnore
     private AppUser user;
+
+
+    public long getPoints() {
+        return points;
+    }
+
+    public void setPoints(long points) {
+        this.points = points;
+    }
+
+    public List<Activity> getActivities() {
+        return activities;
+    }
+
+    public void setActivities(List<Activity> activities) {
+        this.activities = activities;
+    }
+
+    public AppUser getUser() {
+        return user;
+    }
+
+    public void setUser(AppUser user) {
+        this.user = user;
+    }
 }
