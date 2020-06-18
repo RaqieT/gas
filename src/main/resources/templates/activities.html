@@ -18,7 +18,33 @@
 <div th:insert="fragments/menu"></div>
 <div class="container">
     <div class="jumbotron">
+        <div class="card mb-3">
+            <div class="card-body">
+                <table class="table table-hover">
 
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" th:text="#{Activities}"></th>
+                        <th scope="col" th:text="#{Distance}"></th>
+                        <th scope="col" th:text="#{Time}"></th>
+                        <th scope="col" th:text="#{points}"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <th:block th:each="activity : ${activities}">
+                        <tr>
+                            <td th:text="${activity.getId()}">...</td>
+                            <td th:text="${activity.getType()}">...</td>
+                            <td th:text="${activity.serializeDistance()}">...</td>
+                            <td th:text="${activity.serializeTime()}">...</td>
+                            <td th:text="${activity.calculatePoints()}">...</td>
+                        </tr>
+                    </th:block>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 

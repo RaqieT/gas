@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -18,6 +21,35 @@
 <div th:insert="fragments/menu"></div>
 <div class="container">
     <div class="jumbotron">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <ul class="timeline">
+                        <li>
+                            <a href="#" th:text="#{app}" ></a>
+                            <p th:text="#{appText}"> </p>
+                        </li>
+                        <li>
+                            <a href="#" th:text="#{team}"></a>
+                            <p>* Karolina Dąbrowska</p>
+                            <p>* Dawid Michałowski</p>
+                            <p>* Piotr Dyderski</p>
+                            <p>* Michał Sokołowski</p>
+                            <p>* Przemysław Buba</p>
+
+                        </li>
+                        <li>
+                            <a href="#" th:text="#{source}"></a>
+                            <p>* https://publicdomainvectors.org/en/ </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
     </div>
 </div>
