@@ -36,14 +36,12 @@
                     <br>
                     <b class="card-text" th:text="${rank_name}"> </b>
                     <img th:src="@{/images/ranks/{image}(image=${rank_img})}" width="90" height="130" class="figure-img" alt="">
-                    <p class="card-text"><small class="text-muted" th:text='#{lastUpdated}'></small></p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" th:text="#{lastAchievement}"></h5>
                     <p class="card-text">?????????????????????????????????</p>
-                    <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 mins ago</small></p>
                 </div>
             </div>
         </div>
@@ -74,7 +72,6 @@
                     </th:block>
                     </tbody>
                 </table>
-                <p class="card-text"><small class="text-muted" th:text="#{lastUpdated}"> 3 min ago</small></p>
             </div>
         </div>
 

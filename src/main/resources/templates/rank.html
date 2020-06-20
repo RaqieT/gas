@@ -24,7 +24,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Beginner}"/>
                 </h5>
-                <img src="/images/ranks/Beginner.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Beginner'" src="/images/ranks/Beginner.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Beginner'" style="filter: grayscale(100%);" src="/images/ranks/Beginner.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{BeginnerDescr}"/>
                 </p>
@@ -33,7 +34,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Challenger}"/>
                 </h5>
-                <img src="/images/ranks/Challenger.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Challenger'" src="/images/ranks/Challenger.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Challenger'" style="filter: grayscale(100%);" src="/images/ranks/Challenger.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{ChallengerDescr}"/>
                 </p>
@@ -42,7 +44,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Amateur}"/>
                 </h5>
-                <img src="/images/ranks/Amateur.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Amateur'" src="/images/ranks/Amateur.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Amateur'" style="filter: grayscale(100%);" src="/images/ranks/Amateur.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -51,7 +54,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Skillful}"/>
                 </h5>
-                <img src="/images/ranks/Skillful.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Skillful'" src="/images/ranks/Skillful.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Skillful'" style="filter: grayscale(100%);" src="/images/ranks/Skillful.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{SkillfulDescr}"/>
                 </p>
@@ -64,7 +68,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Sportsman}"/>
                 </h5>
-                <img src="/images/ranks/Sportsman.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Sportsman'" src="/images/ranks/Sportsman.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Sportsman'" style="filter: grayscale(100%);" src="/images/ranks/Sportsman.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{SportsmanDescr}"/>
                 </p>
@@ -73,7 +78,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Athlete}"/>
                 </h5>
-                <img src="/images/ranks/Athlete.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Athlete'" src="/images/ranks/Athlete.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Athlete'" src="/images/ranks/Athlete.png" style="filter: grayscale(100%);" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{AthleteDescr}"/>
                 </p>
@@ -82,7 +88,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Master}"/>
                 </h5>
-                <img src="/images/ranks/Master.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Master'" src="/images/ranks/Master.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Master'" style="filter: grayscale(100%);" src="/images/ranks/Master.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{MasterDescr}"/>
                 </p>
@@ -91,7 +98,8 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{Champion}"/>
                 </h5>
-                <img src="/images/ranks/Champion.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} == 'Champion'" src="/images/ranks/Champion.png" width="100" height="100" class="figure-img" alt="">
+                <img th:if="${rank_name} != 'Champion'" style="filter: grayscale(100%);" src="/images/ranks/Champion.png" width="100" height="100" class="figure-img" alt="">
                 <p class="card-text">
                     <th:block th:utext="#{ChampionDescr}"/>
                 </p>

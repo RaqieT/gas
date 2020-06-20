@@ -20,4 +20,28 @@ public class Rank extends BaseEntity{
     String name;
     String rankURL;
 
+
+    public AppUser getUser() {
+        return user;
+    }
+
+    public void setUser(AppUser user) {
+        this.user = user;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRankURL() {
+        return rankURL;
+    }
+
+    public void setRankURL(String rankURL) {
+        this.rankURL = rankURL;
+    }
 }
