@@ -41,7 +41,19 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title" th:text="#{lastAchievement}"></h5>
-                    <p class="card-text">?????????????????????????????????</p>
+
+                    <div th:unless="${#lists.isEmpty(achievement)}">
+
+                        <img th:src="@{/images/achievement/{image}(image=${achievement.get(0).getAchievementURL()})}" width="150" height="150" class="figure-img" alt="">
+                        <h5 class="card-title">
+                            <th:block  th:utext="${achievement.get(0).getName()}"/>
+                        </h5>
+                        <p class="card-text">
+                            <th:block th:utext="${achievement.get(0).getDescription()}"/>
+                        </p>
+
+                    </div>
+
                 </div>
             </div>
         </div>
