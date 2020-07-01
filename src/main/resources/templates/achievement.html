@@ -25,7 +25,10 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{keepMoving}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_activity_summary.svg" width="150" height="150" class="figure-img" alt="">
+
+                    <img th:if="${#lists.contains(namesOfAchievements, 'KeepMoving')}" src="/images/achievement/aggregate_activity_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'KeepMoving')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_activity_summary.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -34,7 +37,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{swifty}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_speed_summary_type_speed.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'Swifty')}" src="/images/achievement/aggregate_speed_summary_type_speed.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'Swifty')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_speed_summary_type_speed.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -43,7 +48,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{regularity}"/>
                 </h5>
-                <img src="/images/achievement/type_workout_exercise.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'Regularity')}" src="/images/achievement/type_workout_exercise.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'Regularity')}" style="filter: grayscale(100%);" src="/images/achievement/type_workout_exercise.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -56,7 +63,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{hydration}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_hydration.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'Hydration')}" src="/images/achievement/aggregate_hydration.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'Hydration')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_hydration.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -65,7 +74,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{heartBeat}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_heart_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'HeartBeat')}" src="/images/achievement/aggregate_heart_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'HeartBeat')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_heart_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -74,7 +85,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{longDistance}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_distance_delta.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'LongDistance')}" src="/images/achievement/aggregate_distance_delta.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'LongDistance')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_distance_delta.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -87,7 +100,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{burnFat}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_basal_metabolic_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'BurnFat')}" src="/images/achievement/aggregate_basal_metabolic_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'BurnFat')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_basal_metabolic_rate_summary.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -96,7 +111,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{countCalories}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_calories_expended.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'CountCalories')}" src="/images/achievement/aggregate_calories_expended.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'CountCalories')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_calories_expended.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>
@@ -105,7 +122,9 @@
                 <h5 class="card-title">
                     <th:block th:utext="#{overpowered}"/>
                 </h5>
-                <img src="/images/achievement/aggregate_power_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:if="${#lists.contains(namesOfAchievements, 'Overpowered')}" src="/images/achievement/aggregate_power_summary.svg" width="150" height="150" class="figure-img" alt="">
+                    <img th:unless="${#lists.contains(namesOfAchievements, 'Overpowered')}" style="filter: grayscale(100%);" src="/images/achievement/aggregate_power_summary.svg" width="150" height="150" class="figure-img" alt="">
+
                 <p class="card-text">
                     <th:block th:utext="#{AmateurDescr}"/>
                 </p>

@@ -2,8 +2,11 @@ package com.project.team.gas.datastore;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import net.minidev.json.annotate.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
@@ -19,6 +22,11 @@ public class AppUser extends BaseEntity {
 
     @OneToOne
     private Rank rank;
+
+    @OneToMany(mappedBy = "appUser", fetch = FetchType.LAZY)
+    @JsonIgnore
+    @ToString.Exclude
+    private List<Achievement> achievements;
 
     public String getGoogleUserId() {
         return googleUserId;

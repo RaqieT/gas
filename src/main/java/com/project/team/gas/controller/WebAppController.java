@@ -1,9 +1,6 @@
 package com.project.team.gas.controller;
 
-import com.project.team.gas.api.service.ActivityService;
-import com.project.team.gas.api.service.AppUserService;
-import com.project.team.gas.api.service.RankService;
-import com.project.team.gas.api.service.UserStatisticsService;
+import com.project.team.gas.api.service.*;
 import com.project.team.gas.datastore.Rank;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -21,6 +18,7 @@ public class WebAppController {
     private final UserStatisticsService userStatisticsService;
     private final RankService rankService;
     private final ActivityService activityService;
+    private final AchievementService achievementService;
     private final Logger mLog = LoggerFactory.getLogger(this.getClass());
 
     @RequestMapping("/")
@@ -30,6 +28,8 @@ public class WebAppController {
         var statistics = userStatisticsService.getByUserId(me.getId());
         Rank rank;
 
+        achievementService.addAchievement();
+
         if (rankService.getByUserId(me.getId()) != null) {
             rank = rankService.getByUserId(me.getId());
             rankService.updateRank(rank);
@@ -38,12 +38,15 @@ public class WebAppController {
             rankService.save(rank);
         }
 
+
         model.addAttribute("username", me.getName());
         model.addAttribute("user_img", me.getImageUrl());
         model.addAttribute("user_points", statistics.getPoints());
         model.addAttribute("rank_name", rank.getName());
         model.addAttribute("rank_img", rank.getRankURL());
         model.addAttribute("activities", activityService.getAllForMe(0, 3));
+        model.addAttribute("achievement", achievementService.getLastAchievement(me.getId(),0,1));
+
         return "index";
     }
 
