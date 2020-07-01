@@ -1699,6 +1699,22 @@ pre code {
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
+table
+{
+  counter-reset: rowNumber;
+}
+
+table tr > td:first-child
+{
+  counter-increment: rowNumber;
+}
+
+table tr td:first-child::before
+{
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em;
+}
 
 .table thead th {
   vertical-align: bottom;
@@ -10220,5 +10236,36 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+
+}
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
 }
 /*# sourceMappingURL=bootstrap.css.map */
