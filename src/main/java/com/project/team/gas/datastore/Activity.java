@@ -22,10 +22,17 @@ public class Activity extends BaseEntity {
     private double distance; // in meters
     @JsonIgnore
     private long time; // in milliseconds
+    @JsonIgnore
+    private double velocity;
+
+    @JsonProperty("velocity")
+    public String serializeVelocity() {
+        return velocity + " m/s";
+    }
 
     @JsonProperty("distance")
     public String serializeDistance() {
-        return String.format("%.2f", distance/1000) + " km";
+        return (velocity * time / 1000) + " m";
     }
 
     @JsonProperty("time")
@@ -38,19 +45,17 @@ public class Activity extends BaseEntity {
         double multiplier = 0;
 
         switch (type) {
-            case WALKING:
+            case CYCLING:
                 multiplier = 1d;
                 break;
-            case CYCLING:
-                multiplier = 1.5d;
-                break;
+            case WALKING:
             case RUNNING:
-                multiplier = 2d;
+                multiplier = 2.5d;
                 break;
             case SWIMMING:
-                multiplier = 3d;
+                multiplier = 25d;
                 break;
         }
-        return (long) ( multiplier * distance * (1d / (time / 100000d)) );
+        return (long) ((( velocity * (time/1000)) / 20) * multiplier);
     }
 }
